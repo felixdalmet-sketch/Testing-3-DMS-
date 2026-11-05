@@ -25,19 +25,59 @@ function Header({ active }: { active: string }) {
 }
 
 const headlines = [
-  { name: "Ankur Warikoo", session: "The Creator Economy and Personal Branding", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" },
-  { name: "Sorav Jain", session: "The Future of Digital Marketing in India", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" },
-  { name: "Raj Shamani", session: "AI Is Reshaping Marketing: What's Next?", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
-  { name: "Neil Patel", session: "Search Is Changing: SEO, AEO and AI Search", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+  {
+    name: "Ankur Warikoo",
+    session: "The Creator Economy and Personal Branding",
+    img: "https://pbs.twimg.com/profile_images/1658700048715366400/sWhKTETK.jpg",
+  },
+  {
+    name: "Sorav Jain",
+    session: "The Future of Digital Marketing in India",
+    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+  },
+  {
+    name: "Raj Shamani",
+    session: "AI Is Reshaping Marketing: What's Next?",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Raj_Shamani.jpg",
+  },
+  {
+    name: "Neil Patel",
+    session: "Search Is Changing: SEO, AEO and AI Search",
+    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+  },
 ];
 
 const specialists = [
-  { name: "Kaushal Thakkar", area: "Meta Ads and Performance Marketing" },
-  { name: "Abhinav Chetan", area: "Content Strategy & Digital Marketing Strategy" },
-  { name: "Saranya M. Vinoth", area: "Technical SEO and Website Growth" },
-  { name: "Rishi Jain", area: "Growth Marketing & Automation" },
-  { name: "Anurag Sharma", area: "Analytics, Attribution and Marketing ROI" },
-  { name: "Aman Jha", area: "Social Media & AI Content Creation" },
+  {
+    name: "Kaushal Thakkar",
+    area: "Meta Ads and Performance Marketing",
+    img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+  },
+  {
+    name: "Abhinav Chetan",
+    area: "Content Strategy & Digital Marketing Strategy",
+    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+  },
+  {
+    name: "Saranya M. Vinoth",
+    area: "Technical SEO and Website Growth",
+    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+  },
+  {
+    name: "Rishi Jain",
+    area: "Growth Marketing & Automation",
+    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+  },
+  {
+    name: "Anurag Sharma",
+    area: "Analytics, Attribution and Marketing ROI",
+    img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+  },
+  {
+    name: "Aman Jha",
+    area: "Social Media & AI Content Creation",
+    img: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=400&h=400&fit=crop",
+  },
 ];
 
 export default function SpeakersPage() {
@@ -52,8 +92,12 @@ export default function SpeakersPage() {
         <div className="mt-4 grid sm:grid-cols-2 gap-5">
           {headlines.map((s) => (
             <div key={s.name} className="bg-white border border-slate-200 rounded-xl overflow-hidden flex gap-4 p-4 card-glow transition">
-              <img src={s.img} alt={s.name} className="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
-              <div>
+              <img
+                src={s.img}
+                alt={s.name}
+                className="w-24 h-24 rounded-lg object-cover flex-shrink-0 bg-slate-200"
+              />
+              <div className="flex flex-col justify-center">
                 <p className="font-bold text-slate-900 text-lg">{s.name}</p>
                 <p className="text-sm text-blue-600 mt-1">{s.session}</p>
               </div>
@@ -64,9 +108,12 @@ export default function SpeakersPage() {
         <h2 className="mt-12 text-xl font-bold text-slate-900">Specialist speakers</h2>
         <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specialists.map((s) => (
-            <div key={s.name} className="bg-white border border-slate-200 rounded-xl p-5 card-glow transition">
-              <p className="font-semibold text-slate-900">{s.name}</p>
-              <p className="text-sm text-slate-500 mt-1">{s.area}</p>
+            <div key={s.name} className="bg-white border border-slate-200 rounded-xl overflow-hidden card-glow transition">
+              <img src={s.img} alt={s.name} className="w-full h-44 object-cover bg-slate-200" />
+              <div className="p-5">
+                <p className="font-semibold text-slate-900">{s.name}</p>
+                <p className="text-sm text-slate-500 mt-1">{s.area}</p>
+              </div>
             </div>
           ))}
         </div>

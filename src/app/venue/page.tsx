@@ -31,17 +31,30 @@ export default function VenuePage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-slate-900">Venue & Location</h1>
 
-        <div className="mt-8 rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+        <div className="mt-8 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
           <img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80"
-            alt="Conference venue"
-            className="w-full h-56 object-cover"
+            src="https://ik.imgkit.net/3vlqs5axxjf/external/https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/153/352/276/ixgfi-exterior-0001-hor-clsc_O.jpg?tr=w-1200%2Cfo-auto"
+            alt="Fairfield by Marriott Belagavi exterior"
+            className="w-full h-64 md:h-80 object-cover bg-slate-200"
           />
-          <div className="bg-white p-6">
+          <div className="p-6">
             <h2 className="text-xl font-bold text-slate-900">Fairfield by Marriott Belagavi</h2>
             <p className="mt-2 text-slate-600">Gogte Plaza, Belagavi, Karnataka 591113, India</p>
             <p className="mt-1 text-sm text-slate-500">20–21 February 2027 · Asia/Kolkata (IST)</p>
           </div>
+        </div>
+
+        <div className="mt-6 grid sm:grid-cols-2 gap-4">
+          <img
+            src="https://cache.marriott.com/is/image/marriotts7prod/ixgfi-outdoor-pool-7927:Wide-Hor?wid=800&fit=constrain"
+            alt="Fairfield Belagavi pool and grounds"
+            className="w-full h-48 object-cover rounded-xl border border-slate-200 bg-slate-200"
+          />
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/21/62/f7/ab/fairfield-by-marriott.jpg"
+            alt="Fairfield by Marriott Belagavi"
+            className="w-full h-48 object-cover rounded-xl border border-slate-200 bg-slate-200"
+          />
         </div>
 
         <h2 className="mt-10 text-xl font-bold text-slate-900">Event spaces</h2>
