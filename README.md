@@ -1,14 +1,14 @@
 # DIGITAL MARKETING SUMMIT 2027
 
-## Deploy on Vercel
+Discover. Connect. Transform.
 
-1. Upload ALL files from this folder to a new GitHub repository (root must contain package.json).
-2. Vercel → New Project → Import the repo.
-3. Framework Preset: Next.js
-4. Root Directory: leave EMPTY
-5. Build Command: `npm run build` (default)
-6. Output: leave default
-7. Node.js Version: 20.x (Settings → General → Node.js Version)
-8. Click Deploy
+**Dates:** 20–21 February 2027  
+**Venue:** Fairfield by Marriott Belagavi (proposed)  
+**Theme:** The Future of Search, Social Media & AI Marketing
 
-No environment variables required for this basic version.
+## Pages
+- Home, About, Agenda, Speakers, Sponsors, Venue, Tickets, Register, Contact, Admin
+
+## Deploy
+Connected to Vercel. Push to main triggers deploy.
+Node 20.x · Framework Next.js · Root Directory empty.
